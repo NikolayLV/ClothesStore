@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/ClothesStore/static/css/main.a149effe.css",
+    "main.js": "/ClothesStore/static/js/main.23adc914.js",
+    "static/media/team.png": "/ClothesStore/static/media/team.08ceb7ec2a59d9e62e16.png",
+    "static/media/about1.png": "/ClothesStore/static/media/about1.6bddfcd859c6561641a8.png",
+    "static/media/mainImg.png": "/ClothesStore/static/media/mainImg.f5d42fe50686b6f5d4fd.png",
+    "static/media/about2.png": "/ClothesStore/static/media/about2.e411ce936b2063f28b62.png",
+    "static/media/col3.png": "/ClothesStore/static/media/col3.f9bc221a1e2b48ff958f.png",
+    "static/media/col2.png": "/ClothesStore/static/media/col2.12c3ce6b36e999d0a32a.png",
+    "static/media/col1.png": "/ClothesStore/static/media/col1.e76d986867e1bc8bd942.png",
+    "static/media/mainImg2.png": "/ClothesStore/static/media/mainImg2.25c59a7b9ff72a82172a.png",
+    "static/media/mainImg3.png": "/ClothesStore/static/media/mainImg3.af47ec45c618b7f38c7f.png",
+    "index.html": "/ClothesStore/index.html",
+    "main.a149effe.css.map": "/ClothesStore/static/css/main.a149effe.css.map",
+    "main.23adc914.js.map": "/ClothesStore/static/js/main.23adc914.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a149effe.css",
+    "static/js/main.23adc914.js"
+  ]
+}
