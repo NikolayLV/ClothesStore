@@ -1,0 +1,67 @@
+.shop {
+  padding-left: 15%;
+  padding-right: 15%;
+  .shop__h1 {
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 55px;
+    line-height: 110%;
+    letter-spacing: 0.02em;
+    color: #000000;
+    margin-top: 150px;
+  }
+  .shop__block {
+    display: flex;
+    padding: 20px;
+    .input {
+      border: none;
+      border-radius: 15px;
+      padding: 15px;
+      background-color: #e8e8e8;
+      box-shadow: 6px 6px 12px #ffffff,
+      -6px -6px 12px #c5c5c5;
+      font-size: medium;
+      font-weight: bold;
+      max-width: 200px;
+    }
+
+    .input:focus {
+      outline-color: white;
+    }
+    .shop__btn {
+      width: 9em;
+      height: 3em;
+      border-radius: 30em;
+      font-size: 15px;
+      font-family: inherit;
+      border: none;
+      position: relative;
+      overflow: hidden;
+      z-index: 1;
+      box-shadow: 6px 6px 12px #c5c5c5,
+      -6px -6px 12px #ffffff;
+      margin-left: 20px;
+    }
+
+    .shop__btn::before {
+      content: '';
+      width: 0;
+      height: 3em;
+      border-radius: 30em;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-image: linear-gradient(to right, #0fd850 0%, #f9f047 100%);
+      transition: .5s ease;
+      display: block;
+      z-index: -1;
+    }
+
+    .shop__btn:hover::before {
+      width: 9em;
+    }
+  }
+}
+
+

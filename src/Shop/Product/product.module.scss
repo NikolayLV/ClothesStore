@@ -1,0 +1,138 @@
+.block__product {
+  padding-left: 15%;
+  padding-right: 15%;
+  .product__title {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 45px;
+    line-height: 110%;
+    letter-spacing: 0.02em;
+    color: #000000;
+  }
+  .product {
+
+    display: flex;
+    .product__left {
+      margin: 40px;
+
+      .block__image {
+        width: 400px;
+        height: 400px;
+
+        .product__image {
+          height: 100%;
+          width: 100%;
+        }
+      }
+
+
+    }
+    .product__right {
+      margin: 40px;
+      .category {
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 140%;
+        letter-spacing: 0.02em;
+        color: #000000;
+      }
+      .price {
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 40px;
+        line-height: 110%;
+        letter-spacing: 0.02em;
+        color: #998E78;
+      }
+      .size {
+        font-family: 'Raleway';
+        font-style: normal;
+        font-size: 16px;
+        line-height: 140%;
+        letter-spacing: 0.02em;
+        color: #000000;
+      }
+      .block__size {
+        display: flex;
+        .sizes {
+          border: 1px solid black;
+          padding: 15px;
+          margin: 10px;
+          font-family: 'Raleway';
+          font-style: normal;
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 140%;
+          letter-spacing: 0.02em;
+          color: #000000;
+        }
+      }
+      .color {
+        font-family: 'Raleway';
+        font-style: normal;
+        font-size: 16px;
+        line-height: 140%;
+        letter-spacing: 0.02em;
+        color: #000000;
+      }
+      .block__color {
+        display: flex;
+        .colors1 {
+          width: 25px;
+          height: 25px;
+          border: 1px solid black;
+          border-radius: 20px;
+          background: black;
+          margin: 10px;
+        }
+        .colors2 {
+          width: 25px;
+          height: 25px;
+          border: 1px solid #b61515;
+          border-radius: 20px;
+          background: #b61515;
+          margin: 10px;
+        }
+        .colors3 {
+          width: 25px;
+          height: 25px;
+          border: 1px solid #3a1eb4;
+          border-radius: 20px;
+          background: #3a1eb4;
+          margin: 10px;
+        }
+        .colors4 {
+          width: 25px;
+          height: 25px;
+          border: 1px solid #a47f23;
+          border-radius: 20px;
+          background: #a47f23;
+          margin: 10px;
+        }
+
+      }
+    }
+  }
+  .desc {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-size: 16px;
+    line-height: 140%;
+    letter-spacing: 0.02em;
+    color: #000000;
+  }
+  .desc2 {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 140%;
+    letter-spacing: 0.02em;
+    color: #000000;
+  }
+}
+

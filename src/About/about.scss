@@ -1,0 +1,105 @@
+.about {
+  padding-left: 15%;
+  padding-right: 15%;
+
+  .about__h1 {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 55px;
+    line-height: 110%;
+    letter-spacing: 0.02em;
+    color: #000000;
+    margin-top: 150px;
+  }
+  .about__block {
+    display: flex;
+    .about__img {
+      width: 480px;
+      height: 542px;
+      margin: 20px;
+    }
+    .about__text {
+      margin: 20px;
+
+      .about__h3 {
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 28px;
+        line-height: 140%;
+        letter-spacing: 0.02em;
+        color: #000000;
+      }
+      .about__p {
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 140%;
+        letter-spacing: 0.02em;
+        color: #000000;
+      }
+    }
+
+  }
+  .about__block2 {
+    display: flex;
+    margin-top: 100px;
+    .about__img {
+      width: 480px;
+      height: 542px;
+      margin: 20px;
+    }
+    .about__text {
+      margin: 20px;
+
+      .about__h3 {
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 28px;
+        line-height: 140%;
+        letter-spacing: 0.02em;
+        color: #000000;
+      }
+      .about__p {
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 140%;
+        letter-spacing: 0.02em;
+        color: #000000;
+      }
+    }
+  }
+  .about__btn {
+    text-align: center;
+    align-items: center;
+    margin-top: 100px;
+
+    .about__btn1 {
+      flex-direction: row;
+      align-items: center;
+      padding: 22px 50px;
+      gap: 10px;
+      width: 360px;
+      height: 68px;
+      background: #6E9C9F;
+      color: white;
+      border: 0;
+      flex: none;
+      order: 2;
+      align-self: center;
+      flex-grow: 0;
+      transition: 0.5s;
+    }
+    .about__btn1:hover {
+      transition: 0.5s;
+      background: #53a8ab;
+
+    }
+  }
+
+}

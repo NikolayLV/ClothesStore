@@ -1,0 +1,82 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: white;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  color: black;
+}
+
+.header {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: space-around;
+  background: linear-gradient(to left, #F1EADC 47%, transparent 40%);
+
+  .header__list {
+    display: flex;
+    margin: 0 40px 0 40px;
+    padding: 40px;
+
+    .header__a {
+      margin: 0 40px 0 40px;
+      font-family: 'Raleway';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 140%;
+      letter-spacing: 0.02em;
+      transition: 0.5s;
+    }
+
+    .header__a:hover {
+      color: #6E9C9F;
+      transition: 0.5s;
+    }
+  }
+
+  .logo {
+    padding: 10px;
+  }
+
+  .header__phone {
+    padding: 40px;
+
+    .phone__img {
+      width: 15px;
+      height: 15px;
+      margin: 0 10px 0 10px;
+    }
+
+    .header__num {
+      font-family: 'Raleway';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 140%;
+      letter-spacing: 0.02em;
+    }
+  }
+
+  .header__cart {
+    padding: 40px;
+
+    .changeLng {
+      width: 80px;
+      height: 25px;
+      background: #6E9C9F;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 17px;
+      line-height: 138.9%;
+      text-align: center;
+      letter-spacing: 0.02em;
+      border: none;
+    }
+  }
+}
