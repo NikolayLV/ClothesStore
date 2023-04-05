@@ -83,5 +83,15 @@
   "shopBtn": "Поиск..",
   "shopDesc": "Описание - ",
   "shopColor": "Выберите цвет:",
-  "shopSize": "Выберите размер:"
+  "shopSize": "Выберите размер:",
+
+  "_Review": "START OF REVIEW BLOCK",
+  "revBtn": "Отправить",
+  "revText": "Напишите отзыв",
+  "revUser": "Представьтесь",
+  "basket": "добавлен в корзину",
+  "buyBtn": "Купить",
+  "basketBtn": "В корзину",
+  "btnDesc": "Описание",
+  "btnRev": "Отзывы"
 }

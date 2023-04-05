@@ -5,8 +5,12 @@ import {useParams} from "react-router-dom";
 import {useTranslation} from "react-i18next";
 import useLocalStorage from "../../hooks/use-localstorage";
 import i18n from "../../i18n";
+import Reviews from "./Reviews/Reviews"
+import styleDesc from "./desc.scss";
+import {use} from "i18next";
+import Modal from "../../Modal/Modal";
 
-const Product = () => {
+const Product = (props) => {
     const [product, setProduct] = useState(false);
     let {productId} = useParams();
     useEffect(() => {
@@ -28,6 +32,45 @@ const Product = () => {
             setLanguage('en');
         }
     }
+
+    const [isProductBasket, setIsProductBasket] = useState(false);
+    const [active, setActive] = useState(false);
+    const [active2, setActive2] = useState(false);
+
+    const addInfo = () => {
+        if (active == false) {
+            setActive(true);
+            setActive2(false);
+        } else {
+            setActive(false);
+        }
+    }
+
+    const addInfo2 = () => {
+        if (active2 == false) {
+            setActive2(true);
+            setActive(false);
+        } else {
+            setActive2(false);
+        }
+    }
+    // const [modalActive, setModalActive] = useState(true);
+    // const [isThisReview, setIsThisReview] = useState(false);
+
+    // const putCategory = () => {
+    //     if (isThisReview == false) {
+    //         setIsThisReview(true);
+    //     } else {
+    //         setIsThisReview(false);
+    //     }
+    //
+    // }
+
+    const addProductToBasket = () => {
+        alert(`${product.title} ${t('basket')}`);
+        setIsProductBasket(true);
+    }
+
     return (
 
         <div className={style.block__product}>
@@ -58,13 +101,34 @@ const Product = () => {
                         <div className={style.colors3}></div>
                         <div className={style.colors4}></div>
                     </div>
+                    {isProductBasket ?
+                        <button onClick={addProductToBasket} className={style.enter}>{t('basketBtn')}</button> :
+                        <button onClick={addProductToBasket} className={style.enter}>{t('buyBtn')}</button>
+
+                    }
+
 
                 </div>
             </div>
 
+            {/*<div className={style.links}>*/}
+            {/*        <button className={style.enter} onClick={() => setModalActive(true)}>Description</button>*/}
+            {/*</div>*/}
 
-            <p className={style.desc2}>{t('shopDesc')}</p>
-            <p className={style.desc}>{product.description}</p>
+            {/*<Modal active={modalActive} setActive={setModalActive}/>*/}
+
+            <div className="buttons__info">
+                <button className="info__btns" onClick={addInfo2}>{t('btnRev')}</button>
+                <button className="info__btns" onClick={addInfo}>{t('btnDesc')}</button>
+            </div>
+
+
+            <p className={active ? "desc2 active" : "desc2"}>{t('shopDesc')}</p>
+            <p className={active ? "desc active" : "desc"}>{product.description}</p>
+
+            <div className={active2 ? "reviews active" : "reviews"}>
+                <Reviews name={product.title}/>
+            </div>
 
 
         </div>

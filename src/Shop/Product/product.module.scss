@@ -14,7 +14,7 @@
 
     display: flex;
     .product__left {
-      margin: 40px;
+      margin-top: 40px;
 
       .block__image {
         width: 400px;
@@ -29,7 +29,8 @@
 
     }
     .product__right {
-      margin: 40px;
+      margin-top: 40px;
+      margin-left: 200px;
       .category {
         font-family: 'Raleway';
         font-style: normal;
@@ -117,22 +118,37 @@
       }
     }
   }
-  .desc {
-    font-family: 'Raleway';
-    font-style: normal;
-    font-size: 16px;
-    line-height: 140%;
-    letter-spacing: 0.02em;
-    color: #000000;
-  }
-  .desc2 {
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 140%;
-    letter-spacing: 0.02em;
-    color: #000000;
-  }
+
 }
+
+.enter {
+  height: 45px;
+  width: 150px;
+  border-radius: 5px;
+  border: 2px solid #000;
+  cursor: pointer;
+  background-color: transparent;
+  transition: 0.5s;
+  text-transform: uppercase;
+  font-size: 10px;
+  letter-spacing: 2px;
+  margin-bottom: 3em;
+  margin-top: 50px;
+}
+
+.enter:hover {
+  background-color: rgb(0, 0, 0);
+  color: white;
+}
+
+.links {
+  padding-left: 30%;
+  padding-right: 30%;
+  display: flex;
+
+}
+
+
+
+
 

@@ -82,5 +82,16 @@
   "shopBtn": "Search..",
   "shopDesc": "Description - ",
   "shopColor": "Choose a color:",
-  "shopSize": "Choose a size:"
+  "shopSize": "Choose a size:",
+
+  "_Review": "START OF REVIEW BLOCK",
+  "revBtn": "Send",
+  "revText": "Write a review",
+  "revUser": "Write your name",
+  "basket": "added to basket",
+  "buyBtn": "Buy",
+  "basketBtn": "In basket",
+  "reviewError": "Review",
+  "btnDesc": "Description",
+  "btnRev": "Reviews"
 }

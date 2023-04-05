@@ -14,8 +14,10 @@ import imp1 from "../assets/images/imp1.png";
 import imp2 from "../assets/images/imp2.png";
 import imp3 from "../assets/images/imp3.png";
 import team from "../assets/images/team.png";
+import {NavLink} from "react-router-dom";
+import React from "react";
 
-function Main()  {
+function Main() {
 
     const {t} = useTranslation();
     const [language, setLanguage] = useLocalStorage('language', 'en');
@@ -41,7 +43,7 @@ function Main()  {
                         {t('mainh3')}
 
                     </h3>
-                    <a href="/ClothesStore/shop" className="main__btn">{t('mainbtn')}</a>
+                    <NavLink to="/shop" className="main__btn">{t('mainbtn')}</NavLink>
 
                     <div className="main__arrows">
                         <img src={lineW} alt="" className="main__arrow"/>
@@ -77,7 +79,7 @@ function Main()  {
                     </div>
                 </div>
                 <div className="col__btn__block">
-                    <a href="/ClothesStore/shop" className="col__btn">{t('collbtn')}</a>
+                    <NavLink to="/shop" className="col__btn">{t('collbtn')}</NavLink>
                 </div>
             </section>
 
