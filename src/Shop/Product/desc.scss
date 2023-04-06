@@ -13,10 +13,9 @@
   transition: 0.5s;
 }
 .desc2 {
-  font-family: 'Raleway';
+  font-family: "Raleway";
   font-style: normal;
-  font-weight: 500;
-  font-size: 20px;
+  font-size: 32px;
   line-height: 140%;
   letter-spacing: 0.02em;
   color: #000000;
@@ -31,12 +30,14 @@
 }
 
 .reviews {
-  transform: scale(0);
+  //transform: scale(0);
+  display: none;
   transition: 0.5s;
 }
 
 .reviews.active {
-  transform: scale(1);
+  display: block;
+  //transform: scale(1);
   transition: 0.5s;
 }
 

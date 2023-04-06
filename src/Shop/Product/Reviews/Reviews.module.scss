@@ -1,27 +1,27 @@
 .container {
   .review__block {
-    height: 300px;
     width: 100%;
   }
+  .main__block:hover {
+    border-left: 2px solid #000;
+    border-bottom: 2px solid #000;
+    border-bottom-left-radius: 8px;
+
+  }
   .main__block {
+    height: 200px;
     padding: 10px;
-    margin: 40px;
     outline: none;
     border: none;
     color: #000;
     font-size: 1em;
     background: transparent;
-    border-left: 2px solid #000;
-    border-bottom: 2px solid #000;
-    transition: 0.1s;
-    border-bottom-left-radius: 8px;
+
     .reviews {
       display: flex;
-      margin-top: 100px;
       .block__left {
         margin: 20px;
         padding: 20px;
-        border: 1px solid black;
         .rev__img {
           width: 40px;
           height: 40px;
@@ -30,10 +30,11 @@
           font-family: 'Raleway';
           font-style: normal;
           font-weight: 500;
-          font-size: 25px;
+          font-size: 14px;
           line-height: 140%;
           letter-spacing: 0.02em;
           color: #000000;
+          width: 160px;
         }
         .rev__p {
           font-family: 'Raleway';
@@ -47,7 +48,7 @@
       }
       .block__right {
         margin: 20px;
-        padding: 80px;
+        padding: 55px;
         .rev__text {
           font-family: 'Raleway';
           font-style: normal;
@@ -167,4 +168,36 @@
 .enter:hover {
   background-color: rgb(0, 0, 0);
   color: white;
+}
+
+.rev__lenght {
+  font-family: "Raleway";
+  font-style: normal;
+  font-size: 16px;
+  line-height: 140%;
+  letter-spacing: 0.02em;
+  color: #000000;
+}
+
+.rev__add {
+  font-family: "Raleway";
+  font-style: normal;
+  font-size: 32px;
+  line-height: 140%;
+  letter-spacing: 0.02em;
+  color: #000000;
+  animation-duration: 2s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
 }

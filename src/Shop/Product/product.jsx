@@ -84,8 +84,8 @@ const Product = (props) => {
 
                 </div>
                 <div className={style.product__right}>
-                    <h3 className={style.category}>{product.category}</h3>
-                    <h3 className={style.price}>{product.price}$</h3>
+                    <h3 className={style.category}>{t('shopCat')} {product.category}</h3>
+                    <h3 className={style.price}>{t('shopPrice')} {product.price}$</h3>
                     <p className={style.size}>{t('shopSize')}</p>
                     <div className={style.block__size}>
                         <p className={style.sizes}>S</p>

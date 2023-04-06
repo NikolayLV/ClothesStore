@@ -4,6 +4,8 @@ import i18n from "../i18n";
 import Style from "./about.scss";
 import about1 from "../assets/images/about1.png"
 import about2 from "../assets/images/about2.png"
+import {NavLink} from "react-router-dom";
+import React from "react";
 
 function About () {
     const {t} = useTranslation();
@@ -41,8 +43,7 @@ function About () {
             </div>
 
             <div className="about__btn">
-                <a href="/shop" className="about__btn1">{t('aboutBTN')}</a>
-
+                <NavLink to="/shop" className="about__btn1">{t('aboutBTN')}</NavLink>
             </div>
         </section>
     )

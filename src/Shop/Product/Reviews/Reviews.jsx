@@ -17,14 +17,14 @@ const Reviews = (props) => {
             },
             {
                 author: "Olga",
-                title: props.name,
+                title: "T-Shirt",
                 text: "Замечательные кроссовки известного бренда. Расскажу чем они меня покорили и почему я больше не хочу покупать китайские подделки",
                 date: "12.09.2022",
                 rating: 3
             },
             {
                 author: "Edward",
-                title: props.name,
+                title: "Company",
                 text: "Замечательные кроссовки известного бренда. Расскажу чем они меня покорили и почему я больше не хочу покупать китайские подделки",
                 date: "03.10.2022",
                 rating: 4
@@ -75,7 +75,7 @@ const Reviews = (props) => {
                 setReviews([newReview, ...reviews]);
 
             } else {
-                alert("Добавьте отзыв!")
+                alert(`${t('revAlert')}`)
             }
 
             setCurrent('');
@@ -90,7 +90,8 @@ const Reviews = (props) => {
                 {/*              onChange={currentReviewHandler}></textarea>*/}
                 {/*    <button onClick={addReviewHandler}>{t('revBtn')}</button>*/}
                 {/*</div>*/}
-                <h3>{t('btnRev')}: {reviews.length}</h3>
+                <h3 className={style.rev__add}>{t('revAdd')}</h3>
+
                 <div className="card">
                     <div className="inputBox1">
                         <input type="text" required="required" value={name} onChange={nameReviewHandler}/>
@@ -102,7 +103,7 @@ const Reviews = (props) => {
                     </div>
                     <button className="enter" type="submit" onClick={addReviewHandler}>{t('revBtn')}</button>
                 </div>
-
+                <h3 className={style.rev__lenght}>{t('btnRev')}: {reviews.length}</h3>
                 {
                     reviews.map((el) => {
                         return (

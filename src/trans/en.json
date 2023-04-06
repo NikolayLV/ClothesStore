@@ -80,7 +80,9 @@
   "shopH1": "Shop",
   "shopInput": "Find it!",
   "shopBtn": "Search..",
-  "shopDesc": "Description - ",
+  "shopPrice": "Price:",
+  "shopCat": "Category:",
+  "shopDesc": "Description  ",
   "shopColor": "Choose a color:",
   "shopSize": "Choose a size:",
 
@@ -93,5 +95,7 @@
   "basketBtn": "In basket",
   "reviewError": "Review",
   "btnDesc": "Description",
-  "btnRev": "Reviews"
+  "btnRev": "Reviews",
+  "revAdd": "Write your review!",
+  "revAlert": "You have not filled in the text field. In order to leave a review, please fill in all fields."
 }

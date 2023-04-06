@@ -6,6 +6,7 @@ import * as PropTypes from "prop-types";
 import React from "react";
 import ReactDOM from "react-dom/client";
 import GoogleMapReact from 'google-map-react';
+import {NavLink} from "react-router-dom";
 
 function Contacts () {
     const {t} = useTranslation();
