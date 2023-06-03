@@ -36,6 +36,7 @@ const Product = (props) => {
     const [isProductBasket, setIsProductBasket] = useState(false);
     const [active, setActive] = useState(false);
     const [active2, setActive2] = useState(false);
+    const [sizeActive, setSizeActive] = useState(false);
 
     const addInfo = () => {
         if (active == false) {
@@ -71,6 +72,7 @@ const Product = (props) => {
         setIsProductBasket(true);
     }
 
+
     return (
 
         <div className={style.block__product}>
@@ -88,11 +90,11 @@ const Product = (props) => {
                     <h3 className={style.price}>{t('shopPrice')} {product.price}$</h3>
                     <p className={style.size}>{t('shopSize')}</p>
                     <div className={style.block__size}>
-                        <p className={style.sizes}>S</p>
-                        <p className={style.sizes}>M</p>
-                        <p className={style.sizes}>L</p>
-                        <p className={style.sizes}>XL</p>
-                        <p className={style.sizes}>XXL</p>
+                        <p className={style.sizes} id="1">S</p>
+                        <p className={style.sizes} id="2">M</p>
+                        <p className={style.sizes} id="3">L</p>
+                        <p className={style.sizes} id="4">XL</p>
+                        <p className={style.sizes} id="5">XXL</p>
                     </div>
                     <p className={style.color}>{t('shopColor')}</p>
                     <div className={style.block__color}>

@@ -7,6 +7,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import GoogleMapReact from 'google-map-react';
 import {NavLink} from "react-router-dom";
+import contacats from "../assets/images/Contact_img.jpg";
 
 function Contacts () {
     const {t} = useTranslation();
@@ -68,7 +69,7 @@ function Contacts () {
                     </div>
                     <button className="enter" type="submit">{t('formSubmit')}</button>
                 </div>
-                <SimpleMap />
+                <img src={contacats} className="conctact__img" alt=""/>
             </div>
 
 

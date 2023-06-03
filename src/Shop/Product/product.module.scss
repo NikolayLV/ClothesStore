@@ -72,6 +72,19 @@
           letter-spacing: 0.02em;
           color: #000000;
         }
+        .sizes.active {
+          border: 1px solid black;
+          background-color: black;
+          padding: 15px;
+          margin: 10px;
+          font-family: 'Raleway';
+          font-style: normal;
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 140%;
+          letter-spacing: 0.02em;
+          color: white;
+        }
       }
       .color {
         font-family: 'Raleway';

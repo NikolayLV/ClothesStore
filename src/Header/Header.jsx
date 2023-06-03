@@ -22,14 +22,6 @@ function Header() {
         }
     }
 
-    function check() {
-        let clickableNum = document.querySelector('#root > div > header > div.header__phone > a');
-        if (clickableNum) {
-            clickableNum.innerHTML = '<a href="tel: ' + clickableNum.innerHTML.trim() + '">' + clickableNum.innerHTML.trim() + '</a>';
-        } else {
-            setTimeout(check, 250);
-        }
-    }
 
     return (
         <header className="header">
@@ -49,7 +41,7 @@ function Header() {
             </div>
             <div className="header__phone">
                 <img src={phone} alt="" className="phone__img"/>
-                <a className="header__num" onClick={check}>+38(068)163-96-68</a>
+                <a className="header__num">+38(068)163-96-68</a>
 
             </div>
             <div className="header__cart">
