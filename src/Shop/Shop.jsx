@@ -1,4 +1,4 @@
-import Style from "./shop.scss";
+import style from "./shop.scss";
 import Product from "./BestSellers";
 import BestSellers from "./BestSellers";
 import {useTranslation} from "react-i18next";
